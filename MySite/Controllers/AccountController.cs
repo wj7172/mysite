@@ -44,6 +44,7 @@ namespace MySite.Controllers
             return View(model);
         }
 
+        [Authorize]
         public ActionResult LogOff()
         {
             FormsAuthentication.SignOut();
